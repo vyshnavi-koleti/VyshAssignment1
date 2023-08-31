@@ -10,12 +10,22 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            
+            
+            Image("Image")
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .padding(.bottom)
+                .frame(width: 350)
+                
+            Text("Mango Dragonfruit Refresher")
+            Text("300 Cal")
+            
+            
         }
-        .padding()
+        .padding(.horizontal, 20.0)
+        .aspectRatio(contentMode: /*@START_MENU_TOKEN@*/.fill/*@END_MENU_TOKEN@*/)
+        .imageScale(/*@START_MENU_TOKEN@*/.small/*@END_MENU_TOKEN@*/)
     }
 }
 
